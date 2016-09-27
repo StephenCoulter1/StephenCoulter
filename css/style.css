@@ -1,1 +1,134 @@
-/* YOUR CUSTOM STYLES */
+html,
+body,
+header,
+.view {
+    height: 100%;
+    margin:0px;
+}
+/* Navigation*/
+
+.navbar {
+    background-color: #3e4551;
+}
+
+.top-nav-collapse {
+    background-color: #2E2E2E;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #2E2E2E;
+    }
+}
+
+.full-bg-img {
+    color: #fff;
+}
+
+.view{
+    background: url("https://4.bp.blogspot.com/-NCxGAzoLhM0/U1lcXebndOI/AAAAAAAA0hs/f2lM5tBlHzU/s0/Magnificent+view+with+Hoover+Dam_Ultra+HD.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section{
+    padding:7.5px;
+}
+
+a.btn:hover
+{
+    background-color:#2e2532;
+}
+
+#div1
+ {
+    padding: 10px;
+ }
+
+form
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#description
+{
+   border-style:groove;
+    border-color: #e5e5e5;
+}
+
+textarea
+{
+    height:200px;
+}
+
+
+
+#h7
+{
+   color:#757575;
+    font-size:12px;
+}
+
+#p3
+{
+padding-left: 50px;
+    padding-right:50px;
+    padding-bottom: 50px;
+    font-family: 'Pavanam', sans-serif;
+
+}
+p{
+    font-family: 'Pavanam', sans-serif;
+}
+
+#circle {
+    padding-left: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#audio
+{
+
+}
+
+img
+{
+    padding-bottom:10px;
+}
+
+#help_list
+{
+    font-size:14px;
+    font-family: 'Pavanam', sans-serif;
+}
+
+#rounded {
+    border-radius: 25px;
+    padding: 20px;
+    max-width:100%;
+    height:auto;
+}
+
+#isarc
+{
+
+    border-radius: 25px;
+    padding: 20px;
+    max-width:200%;
+    height:auto;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+
+}
+
+#isarc:hover
+{
+
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
