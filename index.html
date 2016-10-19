@@ -11,6 +11,8 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script type="text/javascript" src="javascript.js"></script>
 
 </head>
 
@@ -28,9 +30,7 @@
 
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand" href="http://www.isarc.co.uk" target="_blank">ISArc</a>
-                <!--Links-->
+
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -44,19 +44,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="help.html">Help</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="java.html">Demo</a>
+                    </li>
                 </ul>
 
                 <!--Navbar icons-->
                 <ul class="nav navbar-nav nav-flex-icons">
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.facebook.com/ISArcLimited/"><i class="fa fa-facebook"></i></a>
-
                     </li>
                     <li class="nav-item">
+
                         <a class="nav-link" href="https://twitter.com/isarclimited"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"><i class="fa fa-instagram"></i></a>
+
+                    </li>
+                    <li class="nav-item" id="isarcLogo">
+                        <a class="nav-link" href="http://www.isarc.co.uk"> <img src="isarcwhite.png" width="30" height="29" ></a>
 
                     </li>
                 </ul>
@@ -73,20 +80,20 @@
     <div class="full-bg-img flex-center">
         <ul>
             <li>
-                <h1 class="h1-responsive wow fadeInUp">Welcome to the Home Page</h1></li>
+                <h1 id="mainHeader" class="h1-responsive wow fadeInUp">Welcome to the Home Page</h1></li>
             <li>
-                <p class="wow fadeInUp" data-wow-delay="0.2s">Quickly create or view logs below with these buttons </p>
+                <p id ="underTitle" class="wow fadeInUp" data-wow-delay="0.2s">Quickly create or view logs below with these buttons </p>
             </li>
             <li class="wow fadeInUp" data-wow-delay="0.4s">
                 <a class="btn btn-white-outline btn-lg" href ="entry.html#entry1"><i class="fa fa-edit left"></i>Create Log</a>
-                <a class="btn btn-white-outline btn-lg" href="logs.html#log1"><i class="fa fa-book left"></i>View Logs</a>
+                <a class="btn btn-white-outline btn-lg" href="logs.html#log1" alt="view log"><i class="fa fa-book left"></i>View Logs</a>
             </li>
         </ul>
     </div>
 </div>
 
     <section class="section feature-box">
-        <h1 class="section-heading">The Aim of this Webpage</h1>
+        <h1 class="section-heading">The Aim of this Website</h1>
         <p class="section-description lead">The aim of this webpage is to to keep a record of all placement logs which detail exactly what we have learned from each day.
         The webpage will include a form for input which is then shown on the next page as logs.</p>
     </section>
@@ -108,6 +115,8 @@
             <source src="sound.mp3" type="audio/mpeg">
             Your browser does not support the audio element
             </audio>
+
+        <button type="submit" value="submit"  onclick="goBack()">Back</button>
     </div>
 
     <div class="container">
@@ -139,6 +148,30 @@
             <td>14/09/16</td>
             <td>Link</td>
         </tr>
+        <tr>
+            <th>Client Servers</th>
+            <td>Stephen C</td>
+            <td>21/09/16</td>
+            <td>Link</td>
+        </tr>
+        <tr>
+            <th>Distributed Workplace</th>
+            <td>Stephen C</td>
+            <td>22/09/16</td>
+            <td>Link</td>
+        </tr>
+        <tr>
+            <th>Network Safety</th>
+            <td>Stephen C</td>
+            <td>27/09/16</td>
+            <td>Link</td>
+        <tr>
+            <th>Principles of Internet Security</th>
+            <td>Stephen C</td>
+            <td>28/09/16</td>
+            <td>Link</td>
+        </tr>
+        </tr>
         </tbody>
     </table>
     </div>
@@ -167,8 +200,9 @@
             </div>
         </div>
     </footer>
+</header>
 
 </body>
-</header>
+
 
 </html>
