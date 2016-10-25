@@ -34,12 +34,12 @@ function getURL(button)
     switch(button.id)
     {
         case "button1":
-            console.log("This is will display some text in the console");
+            console.log("This is button 1");
 
-                break;
+            break;
 
         case "button2":
-            console.log("This is will display some text in the console");
+            console.log("This is button 2");
 
     }
 
@@ -74,14 +74,14 @@ log.prototype.save=function ()
 function createLog()
 {
 
-    if (document.getElementById("areaText") == null)
+    if (document.getElementById("textArea") == null)
     {
         alert("Cannot find the text box");
     }
 
     else
     {
-        var content = document.getElementById("areaText").value;
+        var content = document.getElementById("textArea").value;
         var hasContent = checkContent(content);
 
         if (hasContent)
@@ -193,28 +193,6 @@ function checkUser()
     }
 
 }
-
-function changeText() {
-    var userInputgender = document.getElementsByName('gender');
-    for (var i = 0, length = userInputgender.length; i < length; i++) {
-        if (userInputgender[i].checked) {
-            document.getElementById('genderChoice').innerHTML = userInputgender[i].value;
-            break;
-        }
-    }
-    return false;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 

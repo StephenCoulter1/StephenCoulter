@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+
 </head>
 <body>
 <header>
@@ -40,7 +41,7 @@
                         <a class="nav-link" href="help.html">Help</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="java.html">Demo</a>
+                        <a class="nav-link" href="demonstration.html">Demo</a>
                     </li>
                 </ul>
 
@@ -81,87 +82,39 @@
                 <!--<li class="wow fadeInUp" data-wow-delay="0.4s">
                     <a class="btn btn-white-outline btn-lg" href ="entry.html#entry1"><i class="fa fa-edit left"></i>Create Log</a>
                     <a class="btn btn-white-outline btn-lg" href="logs.html#log1" alt="view log"><i class="fa fa-book left"></i>View Logs</a>
-                </li> -->
+                </li>-->
             </ul>
         </div>
     </div>
 
-<br><br>
 
 
-    <div class="col-md-8 col-xs-8">
-        <h4>This is the input textbox to enter logs. A prompt will appear for the log name and the date will be automatically populated.</h4>
-<textarea class="center" rows="4" cols="60" id="areaText"></textarea> <br>
-    <button type="submit" value="submit"  onclick="createLog()">Submit</button>
-        <br><br><br><br></div>
+<textarea id="areaText"></textarea>
+<button type="submit" value="submit"  onclick="createLog()">Submit</button>
 
-<script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
 
 <div id="output1"></div>
 <div id="output2"></div>
 <div id="output3"></div>
 
-    <div class="col-md-7 col-xs-7">
-        <h4>These are a selction of buttons with javascript attached.</h4> <br>
-        <ul id="help_list">
-            <li><button type="submit" value="submit"  onclick="getLogs(this)">Submit</button></li>
-            <li>This button once clicked will display all saved logs from above to the console.</li><br>
+<img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="dog1.jpg" height="257" width="236"/>
 
-            <li><button type="submit" value="submit" id="button1" onclick="getURL(this)">Button 1</button></li>
-            <li>This button once clicked will alert the user which button it is (Button 1) and display a message to the console.</li><br>
+<button type="submit" value="submit"  onclick="getLogs(this)">Submit</button>
 
-            <li><button type="submit" value="submit" id="button2" onclick="getURL(this)">Button 2</button></li>
-            <li>This button once clicked will alert the user which button it is (Button 2) and display a message to the console.</li><br>
+<button type="submit" value="submit" id="button1" onclick="getURL(this)">Button 1</button>
 
-            <li><button type="submit" value="submit" onclick="getBrowser(this)">Browser</button></li>
-            <li>This is a button to display browser information.</li>
+<button type="submit" value="submit" id="button2" onclick="getURL(this)">Button 2</button>
 
-            <br><br><br>
-        </ul>
-    </div>
+<button type="submit" value="submit" onclick="getBrowser(this)">Browser</button>
 
-    <div class="col-md-3 col-xs-3">
-        <img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="dog1.jpg" height="257" width="236"/>
-        <br><br>
-    </div>
-
-
-
-
-
-
-
-
-</div>
-
-    <div class="col-md-6 col-xs-10">
-        <h4>This uses cookies to display username and password to the console if it is correct.</h4> <br>
 <form id="inputForm"  onsubmit="checkUser()">
     Input:<input type="text" name="input" ><br>
     <input type="password" name="passCode"><br>
-    <br>
     <input type="submit" value="Submit">
-    <br><br>
-</form><br><br>
-    </div>
 
 
-<div></div>
-    <div class="col-md-8 col-xs-10">
-        <h4>This is basic radio button input.</h4>
-        <form method="get" onsubmit="return changeText()">
-            <input type="radio" name="gender" id="male" value="Man" />Man
-            <input type="radio" name="gender" id="female" value="Woman" />Woman
-            <input type="radio" name="gender" id="other" value="Prefer not to say" />Prefer not to say
-            <br><br>
-            <input type="submit" value="Submit" />
-        </form>
-
-        Your chosen gender is:
-        <b id='genderChoice'></b>
-
-        <br><br>
-        </div>
+</form>
 
 
 
