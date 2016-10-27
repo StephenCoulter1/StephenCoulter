@@ -124,7 +124,7 @@ function resetImage(image)
 }
 
 function getLogs() {
-    var values = [];
+    var values = new Array ();
     var keys = Object.keys(localStorage);
     var i = keys.length;
 
@@ -160,9 +160,16 @@ function getLogs() {
         }
 
         if (typeof(keys[x]) != "undefined") {
-            console.log(localStorage.getItem(keys[x]));
+            values.push(JSON.parse(localStorage.getItem(keys[x])));
         }
     }
+    console.log(values);
+    with (values[1])
+    {
+        console.log(logName);
+    }
+
+
 
 }
 
@@ -179,12 +186,13 @@ function checkUser()
     console.log(userNameInput.value);
     console.log(passwordInput.value);
 
-    if(userNameInput.value == "Stephen" && passwordInput.value== "Password")
+    if(userNameInput.value == "Stephen" && passwordInput.value== "Password" )
     {
         console.log("success");
         document.cookie="user name = " +userNameInput.value;
 
         console.log(document.cookie);
+        window.location= 'passwordPage.html';
 
     }
     else
@@ -194,11 +202,12 @@ function checkUser()
 
 }
 
-function changeText() {
-    var userInputgender = document.getElementsByName('gender');
-    for (var i = 0, length = userInputgender.length; i < length; i++) {
-        if (userInputgender[i].checked) {
-            document.getElementById('genderChoice').innerHTML = userInputgender[i].value;
+function showGender()
+{
+    var userInputGender = document.getElementsByName('gender');
+    for (var i = 0, length = userInputGender.length; i < length; i++) {
+        if (userInputGender[i].checked) {
+            document.getElementById('genderChoice').innerHTML = userInputGender[i].value;
             break;
         }
     }
@@ -206,8 +215,10 @@ function changeText() {
 }
 
 
-
-
+function getRandom()
+{
+    alert(Math.random());
+}
 
 
 

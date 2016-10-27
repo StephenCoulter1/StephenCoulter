@@ -14,6 +14,24 @@
 <body>
 <header>
 
+    <!--<SCRIPT language="JavaScript">-->
+        <!--&lt;!&ndash;-->
+
+        <!--var password;-->
+
+        <!--var pass1="password";-->
+
+        <!--password=prompt('Please enter your password to view this page!',' ');-->
+
+        <!--if (password==pass1)-->
+            <!--alert('Password Correct! Click OK to enter!');-->
+        <!--else-->
+
+            <!--window.location="index.html";-->
+<!--&ndash;&gt;-->
+        <!---->
+    <!--</SCRIPT>-->
+
 
     <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
@@ -134,7 +152,7 @@
 
 </div>
 
-    <div class="col-md-6 col-xs-10">
+    <div class="col-md-12 col-xs-12">
         <h4>This uses cookies to display username and password to the console if it is correct.</h4> <br>
 <form id="inputForm"  onsubmit="checkUser()">
     Input:<input type="text" name="input" ><br>
@@ -147,23 +165,74 @@
 
 
 <div></div>
-    <div class="col-md-8 col-xs-10">
+    <div class="col-md-6 col-xs-12">
         <h4>This is basic radio button input.</h4>
-        <form method="get" onsubmit="return changeText()">
-            <input type="radio" name="gender" id="male" value="Man" />Man
-            <input type="radio" name="gender" id="female" value="Woman" />Woman
-            <input type="radio" name="gender" id="other" value="Prefer not to say" />Prefer not to say
-            <br><br>
-            <input type="submit" value="Submit" />
+        <form method="get" onsubmit="showGender()">
+            <input type="radio" name="gender" id="male" value="Man" /> Men
+            <input type="radio" name="gender" id="female" value="Woman" /> Woman
+            <input type="radio" name="gender" id="other" value="Prefer not to say" /> Prefer not to say
+            <input type="submit" value="Submit"/>
         </form>
-
+        <br>
         Your chosen gender is:
         <b id='genderChoice'></b>
 
-        <br><br>
+
         </div>
 
 
+    <div class="col-md-6 col-xs-12">
+        <h4>This is a basic Math.Random function.</h4>
+        This will display a random number between 0 and 1 to the console.
+        <form method="get" onsubmit="getRandom()">
+
+        <input type="submit" value="Submit"/>
+        </form><br><br><br><br>
+    </div>
+
+
+
+    <div class="col-md-6 col-xs-12">
+
+
+        Checkbox: <input type="checkbox" id="myCheck">
+
+        <p>Clicking this will tell you whether or not the checkbox is ticked. This is a very basic checkbox function.</p>
+
+        <button onclick="checkOne()">Submit</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function checkOne()
+            {
+                var x = document.getElementById("myCheck").checked;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+
+
+<div class="col-md-12 col-xs-12">
+<br><br>
+
+    <h4>This is a RegExp Object Search String Function</h4>
+    <p>A regular expression is a sequence of characters that forms a search pattern. They can be used to search or replace.</p>
+
+    <script>
+        function myFunction() {
+            var str = "Welcome to my webpage if you are looking for the Password:Password";
+            var n = str.search("Password:Password");
+            document.getElementById("search").innerHTML = n;
+        }
+    </script>
+
+
+    <p>Use this search button to find out where abouts the Password is in the code.</p>
+
+    <button onclick="myFunction()">Submit</button>
+    <p>Look in position</p><p id="search"></p>
+
+</div>
 
 
 
