@@ -187,9 +187,10 @@
         <form method="get" onsubmit="getRandom()">
 
         <input type="submit" value="Submit"/>
-        </form><br><br><br><br>
+        </form><br><br>
     </div>
 
+    <div class="col-md-12"><hr><br></div>
 
 
     <div class="col-md-6 col-xs-12">
@@ -211,8 +212,8 @@
             }
         </script>
 
-
-<div class="col-md-12 col-xs-12">
+</div>
+<div class="col-md-6 col-xs-12">
 <br><br>
 
     <h4>This is a RegExp Object Search String Function</h4>
@@ -234,7 +235,36 @@
 
 </div>
 
+    <div class="col-md-12"><hr><br></div>
 
+<div class="col-md-6 col-xs-12">
+
+
+    <h4>This is the select box.</h4>
+    <p>Once you pick one from the select box it will tell you which colour that you picked.</p>
+
+<script type="text/javascript">
+    function showSelected(val)
+    {
+        document.getElementById
+        ('selectedResult').innerHTML = "The selected colour is: " + val;
+    }
+</script>
+
+    <div id='selectedResult'></div>
+
+    <select name='test' onChange='showSelected(this.value)'>
+        <option value='Yellow'>Yellow</option>
+        <option value='Red'>Red</option>
+        <option value='Blue'>Blue</option>
+    </select>
+</div>
+
+
+    <div class="col-md-12"><br><br><br></div>
+
+
+</header>
 
 </body>
 
