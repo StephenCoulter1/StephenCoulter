@@ -101,7 +101,7 @@
 
             <div id="entryJumbo" style="margin-top: 71px;" class="jumbotron">
                 <div class="container">
-                    <h1 style="color:white">Hello, world!</h1>
+                    <h1 style="color:white">Welcome to the Logs Page!</h1>
                     <p style="color:white">This is the Log Entry page which has a form to enter the logs into a mySql database.</p>
                     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                 </div>

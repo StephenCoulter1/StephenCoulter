@@ -2,22 +2,29 @@
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;\csgray\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww13800\viewh15120\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww13820\viewh15140\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs32 \cf0 This log is another log on Javascript which looks at different plug ins and libraries that can be used. There are a large number of benefits and drawbacks of using external libraries and plug ins.\
+\f0\fs32 \cf0 This is the final log on Javascript and on this we will look at different plug ins and external libraries that can be used. There are several number of benefits and drawbacks  of using these external libraries and plug ins. \
+\
+\
+An advantage of this is the reusability which allows anyone to use the external code for several different applications. This will save the user a great amount of time when it comes dealing with certain projects that they may have undertook. There is also the advantage of having shared resources which essentially means that certain parts and resources can be used all across the board. Some of the final advantages of using plug ins are familiarity and web caching. Web caching is the temporary storage of web documents such as HTML pages and images which over time will reduce the bandwidth usage and the load on the server. \
+\
+\
+However plug ins can have certain downsides which in the short and long term can have potential threats towards the computer system. Unless the plug in is very widely used then it is highly likely that it will be updated on a regular basis therefore it can begin to fail overtime and unless you know how to fix it then it may become redundant. Another problems with plug ins is that they can have a hidden malicious intent and lay dormant until needed. Whoever makes the plug in may have set it up to record all the data about the user which is a very high security risk as once they have information about you they can obtain passwords and codes which can be used for the worse. A final large issue is that if you have not fully optimised your code in order to prevent cross site scripting then outside users with knowledge in scripting will be able to gain access to your data stores and more by using simple scripts. 
+\fs24 \
+\
 \
 
-\b Pros										Cons\
-
-\b0 Reusability								Deprecation or lack of support\
-Share Resource Hosting						Vulnerability\
-Familiarity								Security\
-Web Caching								Cross site Issues (scripting)\
-\
+\fs32 \
 The first way to create and use javascript libraries is to add in a script tag with a type that is text/javascript. This means that the javascript can be used freely as long as it has been referenced correctly whenever you decide to use it. The script should be added to all of the pages that will use the library. Once the browser encounters the library the first time around it saves the containing code in cache in order to make requests the next time a lot quicker. You can also use external scripts or scripts that someone else has made earlier.  Firstly you will have to get the script by either downloading it or adding in the url of where you find the file online. After this follow the same referencing style you have initially completed for all of the scripts you have made before. Use the script tag and locate the source whenever it is needed to be used. Finally use an event handler to call the script on either a button/input tag or any other way you like. \
 \
 After this we learnt about XMLHttpRequests and how they interact with XML. The XMLHttpRequest object has a responseXML method that javascript can use to parse the XML to obtain structured data. This was one of the more complex things that we achieved but it once understood we were able to perform powerful functions. \
 \
-There are also several alternatives to XML based AJAX which include Server-send events (SSE), Web Sockets and Java applets. A Server sent event works as a web page that automatically gets the updates from a server. They do not have to check if any updates are available as they just do it automatically. \
+There are also several alternatives to XML based AJAX which include Server-send events (SSE), Web Sockets and Java applets. A Server sent event works as a web page that automatically gets the updates from a server. They do not have to check if any updates are available as they just do it automatically. Along with this we learnt about AJAX based requests and what exactly is the process they undertake. After running this the function will then create  XMLHttpRequest which once it is sent off using either post or get a response will be given. This response will be received by the user on their browser as that is the best way to show them that the request has been received. After this javascript is used to parse the response so it is really and then the page is automatically updated. The final section we looked at regarded identifying key structure and restrictions in relation to javascript. Whenever the XML response has been parsed after an AJAX request the XML document must have an XML declaration as text/xml. This is the same if you were using a javascript script declaration you would use a javascript/text tag. The XML documents are also limited in their size in that they are only entitled to a certain number of characters meaning the response you will get is also limited.\
+\
+\
+\
+\
+\
 }
