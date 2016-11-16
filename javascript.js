@@ -115,12 +115,12 @@ function createLog()
 
 function setImage(image)
 {
-    image.src = 'dog2.jpg';
+    image.src = 'img/photos/dog2.jpg';
 }
 
 function resetImage(image)
 {
-    image.src= 'dog1.jpg';
+    image.src= 'img/photos/dog1.jpg';
 }
 
 function getLogs() {

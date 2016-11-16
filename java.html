@@ -11,6 +11,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
+<style>
+    #tiledBackground{
+       background-image: url("img/photos/gears.jpg") ;
+        background-repeat: repeat-x;
+        opacity: 0.8;
+        color:black;
+        font-size:22px;
+    }
+
+</style>
 <body>
 <header>
 
@@ -139,7 +149,7 @@
     </div>
 
     <div class="col-md-3 col-xs-3">
-        <img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="dog1.jpg" height="257" width="236"/>
+        <img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="img/photos/dog1.jpg" height="257" width="236"/>
         <br><br>
     </div>
 
@@ -265,11 +275,22 @@
 
 
     <div class="col-md-12 col-xs-12">
+
+        <h3>This is an image map and each planet will take you to the planet of your choice</h3>
         <img src="https://i.ytimg.com/vi/Cbei3VZjZ48/maxresdefault.jpg" width="340" height="210" alt="planets" usemap="#planetmap">
 
             <map name="planetmap">
-                <area shape="circle" coords="165,105,30,20" href="http://images.clipartpanda.com/sun-clipart-biyEpRzGT.png" alt="sun">
+                <area shape="circle" coords="165,105,30,20" href="https://en.wikipedia.org/wiki/Sun" alt="sun">
+                <area shape="circle" coords="130,35,30,20" href="https://en.wikipedia.org/wiki/Earth" alt="earth">
+                <area shape="circle" coords="265,135,30,20" href="https://en.wikipedia.org/wiki/Saturn" alt="saturn">
             </map>
+        <br>
+    </div>
+
+
+    <div class="col-md-12"><h3 >This is a basic background repeating tile to show how it works</h3></div>
+    <div class="col-md-12" id="tiledBackground">
+        <p><br><br><br><br></p>
     </div>
 
 
