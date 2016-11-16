@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+<style>
+    #tiledBackground{
+       background-image: url("img/photos/gears.jpg") ;
+        background-repeat: repeat-x;
+        opacity: 0.8;
+        color:black;
+        font-size:22px;
+    }
+
+</style>
+<body>
+<header>
+
+    <!--<SCRIPT language="JavaScript">-->
+        <!--&lt;!&ndash;-->
+
+        <!--var password;-->
+
+        <!--var pass1="password";-->
+
+        <!--password=prompt('Please enter your password to view this page!',' ');-->
+
+        <!--if (password==pass1)-->
+            <!--alert('Password Correct! Click OK to enter!');-->
+        <!--else-->
+
+            <!--window.location="index.html";-->
+<!--&ndash;&gt;-->
+        <!---->
+    <!--</SCRIPT>-->
+
+
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
+
+        <div class="container">
+
+
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logs.html">Logs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Entries.php">Entry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="java.html">Demo</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/ISArcLimited/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="https://twitter.com/isarclimited"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-instagram"></i></a>
+
+                    </li>
+                    <li class="nav-item" id="isarcLogo">
+                        <a class="nav-link" href="http://www.isarc.co.uk"> <img src="isarcwhite.png" width="30" height="29" ></a>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <h1 id="mainHeader" class="h1-responsive wow fadeInUp">Welcome to the Java Script Page</h1></li>
+                <li>
+                    <p id ="underTitle" class="wow fadeInUp" data-wow-delay="0.2s">Now on the javascript page</p>
+                </li>
+                <!--<li class="wow fadeInUp" data-wow-delay="0.4s">
+                    <a class="btn btn-white-outline btn-lg" href ="entry.html#entry1"><i class="fa fa-edit left"></i>Create Log</a>
+                    <a class="btn btn-white-outline btn-lg" href="logs.html#log1" alt="view log"><i class="fa fa-book left"></i>View Logs</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+<br><br>
+
+
+    <div class="col-md-8 col-xs-8">
+        <h4>This is the input textbox to enter logs. A prompt will appear for the log name and the date will be automatically populated.</h4>
+<textarea class="center" rows="4" cols="60" id="areaText"></textarea> <br>
+    <button type="submit" value="submit"  onclick="createLog()">Submit</button>
+        <br><br><br><br></div>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+<div id="output1"></div>
+<div id="output2"></div>
+<div id="output3"></div>
+
+    <div class="col-md-7 col-xs-7">
+        <h4>These are a selction of buttons with javascript attached.</h4> <br>
+        <ul id="help_list">
+            <li><button type="submit" value="submit"  onclick="getLogs(this)">Submit</button></li>
+            <li>This button once clicked will display all saved logs from above to the console.</li><br>
+
+            <li><button type="submit" value="submit" id="button1" onclick="getURL(this)">Button 1</button></li>
+            <li>This button once clicked will alert the user which button it is (Button 1) and display a message to the console.</li><br>
+
+            <li><button type="submit" value="submit" id="button2" onclick="getURL(this)">Button 2</button></li>
+            <li>This button once clicked will alert the user which button it is (Button 2) and display a message to the console.</li><br>
+
+            <li><button type="submit" value="submit" onclick="getBrowser(this)">Browser</button></li>
+            <li>This is a button to display browser information.</li>
+
+            <br><br><br>
+        </ul>
+    </div>
+
+    <div class="col-md-3 col-xs-3">
+        <img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="img/photos/dog1.jpg" height="257" width="236"/>
+        <br><br>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+    <div class="col-md-12 col-xs-12">
+        <h4>This uses cookies to display username and password to the console if it is correct.</h4> <br>
+<form id="inputForm"  onsubmit="checkUser()">
+    Input:<input type="text" name="input" ><br>
+    <input type="password" name="passCode"><br>
+    <br>
+    <input type="submit" value="Submit">
+    <br><br>
+</form><br><br>
+    </div>
+
+
+<div></div>
+    <div class="col-md-6 col-xs-12">
+        <h4>This is basic radio button input.</h4>
+        <form method="get" onsubmit="showGender()">
+            <input type="radio" name="gender" id="male" value="Man" /> Men
+            <input type="radio" name="gender" id="female" value="Woman" /> Woman
+            <input type="radio" name="gender" id="other" value="Prefer not to say" /> Prefer not to say
+            <input type="submit" value="Submit"/>
+        </form>
+        <br>
+        Your chosen gender is:
+        <b id='genderChoice'></b>
+
+
+        </div>
+
+
+    <div class="col-md-6 col-xs-12">
+        <h4>This is a basic Math.Random function.</h4>
+        This will display a random number between 0 and 1 to the console.
+        <form method="get" onsubmit="getRandom()">
+
+        <input type="submit" value="Submit"/>
+        </form><br><br>
+    </div>
+
+    <div class="col-md-12"><hr><br></div>
+
+
+    <div class="col-md-6 col-xs-12">
+
+
+        Checkbox: <input type="checkbox" id="myCheck">
+
+        <p>Clicking this will tell you whether or not the checkbox is ticked. This is a very basic checkbox function.</p>
+
+        <button onclick="checkOne()">Submit</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function checkOne()
+            {
+                var x = document.getElementById("myCheck").checked;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+
+</div>
+<div class="col-md-6 col-xs-12">
+<br><br>
+
+    <h4>This is a RegExp Object Search String Function</h4>
+    <p>A regular expression is a sequence of characters that forms a search pattern. They can be used to search or replace.</p>
+
+    <script>
+        function myFunction() {
+            var str = "Welcome to my webpage if you are looking for the Password:Password";
+            var n = str.search("Password:Password");
+            document.getElementById("search").innerHTML = n;
+        }
+    </script>
+
+
+    <p>Use this search button to find out where abouts the Password is in the code.</p>
+
+    <button onclick="myFunction()">Submit</button>
+    <p>Look in position</p><p id="search"></p>
+
+</div>
+
+    <div class="col-md-12"><hr><br></div>
+
+<div class="col-md-6 col-xs-12">
+
+
+    <h4>This is the select box.</h4>
+    <p>Once you pick one from the select box it will tell you which colour that you picked.</p>
+
+<script type="text/javascript">
+    function showSelected(val)
+    {
+        document.getElementById
+        ('selectedResult').innerHTML = "The selected colour is: " + val;
+    }
+</script>
+
+    <div id='selectedResult'></div>
+
+    <select name='test' onChange='showSelected(this.value)'>
+        <option value='Yellow'>Yellow</option>
+        <option value='Red'>Red</option>
+        <option value='Blue'>Blue</option>
+    </select>
+</div>
+
+
+    <div class="col-md-12"><br><br><br></div>
+
+
+    <div class="col-md-12 col-xs-12">
+
+        <h3>This is an image map and each planet will take you to the planet of your choice</h3>
+        <img src="https://i.ytimg.com/vi/Cbei3VZjZ48/maxresdefault.jpg" width="340" height="210" alt="planets" usemap="#planetmap">
+
+            <map name="planetmap">
+                <area shape="circle" coords="165,105,30,20" href="https://en.wikipedia.org/wiki/Sun" alt="sun">
+                <area shape="circle" coords="130,35,30,20" href="https://en.wikipedia.org/wiki/Earth" alt="earth">
+                <area shape="circle" coords="265,135,30,20" href="https://en.wikipedia.org/wiki/Saturn" alt="saturn">
+            </map>
+        <br>
+    </div>
+
+
+    <div class="col-md-12"><h3 >This is a basic background repeating tile to show how it works</h3></div>
+    <div class="col-md-12" id="tiledBackground">
+        <p><br><br><br><br></p>
+    </div>
+
+
+</header>
+
+</body>
+
+</html>

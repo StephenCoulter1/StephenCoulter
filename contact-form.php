@@ -28,13 +28,14 @@ if( empty($errors))
     $headers .= "Reply-To: $email_address";
     mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
-    header('Location: help.html');
 }
+header('Location: thankyou2.html');
 
 $message = "Thank you for your interest. We will get back to you as soon as possible.<br />Sincerely,<br />Stephen Coulter";
-$subject = "Confirmation";
+$subject = "Email Confirmation";
 
 $headers2 = "From: $myemail\r\n";
 $headers2 .= "Content-type:  text/html\r\n";
 mail($email_address, $subject, $message, $headers2);
+
 ?>

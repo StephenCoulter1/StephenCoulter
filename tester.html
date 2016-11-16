@@ -1,49 +1,27 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
-    <title>Javascript and buttons</title>
-
-
-    <form id="localStorageTest" method="post" action="">
-        <label>Name:</label>
-        <input type="text" name="name" id="name" class="stored" value="" />
-
-        <label>Email:</label>
-        <input type="email" name="email" id="email" class="stored" value="" />
-
-        <label>Message:</label>
-        <textarea name="message" id="message" class="stored"></textarea>
-
-        <input type="submit" class="demo-button" value="Submit" />
-    </form>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            function init() {
-                if (localStorage["name"]) {
-                    $('#name').val(localStorage["name"]);
-                }
-                if (localStorage["email"]) {
-                    $('#email').val(localStorage["email"]);
-                }
-                if (localStorage["message"]) {
-                    $('#message').val(localStorage["message"]);
-                }
-            }
-            init();
-        });
-
-        $('.stored').keyup(function () {
-            localStorage[$(this).attr('name')] = $(this).val();
-        });
-
-        $('#localStorageTest').submit(function() {
-            localStorage.clear();
-        });
-    </script>
+    <style>
+        div {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: #ff0000;
+            display: inline-block;
+            margin-left: 5px;
+        }
+    </style>
 
 
 
-
+    <title>Intro Webpage!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0; target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="tester.js"></script>
 </head>
+<body>
+
+</body>
 </html>

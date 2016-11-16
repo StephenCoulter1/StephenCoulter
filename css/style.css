@@ -5,25 +5,57 @@ header,
     height: 100%;
     margin:0px;
 }
-/* Navigation*/
 
-.navbar {
+
+.navbar{
     background-color: #3e4551;
+    opacity: 0.93;
+    font-family: 'Poppins', sans-serif;
+    font-size:22px;
+    padding-top: 12.5px;
 }
 
+#entryId
+{
+    background-image: url("https://sftool.gov/Content/Images/GPC/gpc-jumbotron-bg.jpg");
+    opacity: 0.93;
+    font-family: 'Poppins', sans-serif;
+    font-size:22px;
+    padding-top: 12.5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
 .top-nav-collapse {
-    background-color: #2E2E2E;
+    background-color: #3e4551;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #2E2E2E;
+        background-color: #3e4551;
+
     }
 }
 
 .full-bg-img {
     color: #fff;
 }
+
+#isarcLogo
+{
+    padding-top:4.4px;
+    padding-bottom:4.5px;
+}
+
+#isarcLogo:hover
+{
+    opacity:0.8;
+}
+
 
 .view{
     background: url("https://4.bp.blogspot.com/-NCxGAzoLhM0/U1lcXebndOI/AAAAAAAA0hs/f2lM5tBlHzU/s0/Magnificent+view+with+Hoover+Dam_Ultra+HD.jpg")no-repeat center center fixed;
@@ -33,13 +65,40 @@ header,
     background-size: cover;
 }
 
+#entryJumbo
+{
+    background-image: url("https://sftool.gov/Content/Images/GPC/gpc-jumbotron-bg.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+#mainHeader
+{
+    font-size:44px;
+}
+
+
 .section{
     padding:7.5px;
 }
 
+
 a.btn:hover
 {
-    background-color:#2e2532;
+    /* background-color: rgba(44,36,48, 0.7); */
+    background-color: rgba(255,255,255, 0.2);
+    /* border-width:3px; */
+
+
+}
+#underTitle
+{
+    font-family: 'Poppins', sans-serif;
+
 }
 
 #div1
@@ -59,8 +118,17 @@ form
     border-color: #e5e5e5;
 }
 
-textarea
+#textArea
 {
+width:400px;
+    height:100px;
+
+}
+
+#areaText
+{
+    align-content:center;
+    width: 800px;
     height:200px;
 }
 
@@ -70,6 +138,11 @@ textarea
 {
    color:#757575;
     font-size:12px;
+}
+
+#qsts
+{
+    font-size:22px;
 }
 
 #p3
@@ -106,6 +179,10 @@ img
     font-size:14px;
     font-family: 'Pavanam', sans-serif;
 }
+#output2
+{
+    font-family:'Pavanam', sans-serif;
+}
 
 #rounded {
     border-radius: 25px;
@@ -131,4 +208,10 @@ img
 
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+#logForm
+{
+    font-size:16px;
+
 }

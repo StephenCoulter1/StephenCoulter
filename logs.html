@@ -11,6 +11,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
 
@@ -27,11 +28,9 @@
 
             <div class="container">
 
-                <!--Collapse content-->
+
                 <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <!--Navbar Brand-->
-                    <a class="navbar-brand" href="http://www.isarc.co.uk" target="_blank">ISArc</a>
-                    <!--Links-->
+
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -40,14 +39,17 @@
                             <a class="nav-link" href="logs.html">Logs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entry.html">Entry</a>
+                            <a class="nav-link" href="Entries.php">Entry</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="help.html">Help</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="java.html">Demo</a>
+                        </li>
                     </ul>
 
-                    <!--Navbar icons-->
+
                     <ul class="nav navbar-nav nav-flex-icons">
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.facebook.com/ISArcLimited/"><i class="fa fa-facebook"></i></a>
@@ -58,23 +60,26 @@
                         <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-instagram"></i></a>
                         </li>
+                        <li class="nav-item" id="isarcLogo">
+                            <a class="nav-link" href="http://www.isarc.co.uk"> <img src="isarcwhite.png" width="30" height="28" ></a>
+
+                        </li>
                     </ul>
                 </div>
-                <!--/.Collapse content-->
+
 
             </div>
 
         </nav>
 
 
-
         <div class="view hm-black-light">
             <div class="full-bg-img flex-center">
                 <ul>
                     <li>
-                        <h1 class="h1-responsive wow fadeInUp">Welcome to the Logs Page</h1></li>
+                        <h1 id="mainHeader" class="h1-responsive wow fadeInUp">Welcome to the Logs Page</h1></li>
                     <li>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Below are all the logs that have been stored.</p>
+                        <p id ="underTitle" class="wow fadeInUp" data-wow-delay="0.2s">Below are all the logs that have been stored.</p>
                     </li>
 
                 </ul>
@@ -85,64 +90,449 @@
 
     <section class="section feature-box">
         <h1 class="section-heading">The Logs Store</h1>
-        <p class="section-description lead">The aim of this webpage is to to keep a record of all placement logs which detail exactly what we have learned from each day.The logs
-            will be input from a form on the next page.</p>
         <div><a NAME="log1"></a></div>
+        <p id ="underTitle" class="section-description lead">The aim of this webpage is to to keep a record of all placement logs which detail exactly what we have learned from each day.The logs
+            will be input from a form on the next page.</p>
+
     </section>
 
-        <section>
-            <div class="comments-list">
-                <div id ="div1" class="row">
-                    <div class="col-sm-12 col-xs-12">
-                        <a><h3 class="user-name">Html/Css 1</h3></a>
-                        <div class="card-data">
-                            <ul>
-                                <li class="comment-date"><i class="fa fa-clock-o"></i> 08/09/2016</li>
-                            </ul>
+
+          <!--  <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+
+                <textarea id="textArea"></textarea>
+                <button align="right" type="submit" value="submit"  onclick="createLog()">Submit</button>
+                <script type="text/javascript" src="javascript.js"></script>
+        <br><br><br>
+            </div>
+            <div class="col-md-3"></div> -->
+
+
+<div class="row-fluid">
+
+                    <div class="row-fluid">
+                        <div class="col-md-12"><h2>Log 1 (HTML/CSS 1)</h2></div>
+                         <div class="col-md-12">
+                         <p>On the First day of our NVQ we created our first html webpage using a program called phpstorm. Once our main index.html page was created we use a very basic structure and also set the doctype. The doctype describes to the document the document type definition i.e a particular version of HTML. In the index.html we added several elements which includes a header, a paragraph, a table of contents and a link. The paragraph was defined with the p tags.
+                             The header was the largest size of header so it was defined as an h1 tag. <br><br>
+                             The next addition was a table of contents which starts off with a table tag and using different tags can define rows, data and headings. The row is defined by tr, the data is defined by td and the table heading is th. The elements can then be styled either using inline styling which is by using the style attribute in html elements, internet styling which uses a style element in the head section and lastly external styling from a css file (cascading stylesheet).
+                             The method i opted for was to use an external stylesheet from which I could style all my items or give them tags to separate them.
+                             <br><br>
+                             After this we created an audio file using the onboard microphone and converted it to .m3a and .ogg so it could be read by all devices.
+                             We then created an audio element using the audio tag and gave it full controls and no autoplay so the user could choose whether they listen to it or not. Once we completed all this we then optimised our site so it could be read from a lynx browser, by giving each of our link, picture and audio elements a textual secondary description. Once all this was completed we then had a fully functional index.html webpage. From here we could next add many features and expand to new html pages.
+                             </p><br>
+                     </div>
+                    </div>
+
+
+
+                    <div class="row-fluid">
+                        <div class="col-md-12"><h2>Log 2 (HTML/CSS 2)</h2></div>
+                         <div class="col-md-12">
+                            <p>The second lesson of our NVQ revolved around adding styling as well as some transitional elements to the index.html page to make it look up to a high standard before we moved on to a new one. We began by adding a text effect to any html element. I choose the header and decided to add a b tag to make it stand out in bold. However you can choose italics or sub/superscript all by placing short tags around the word or sentence you would like to style it.
+                                It all depends on how much you would like your text to stand out. After this i applied a background colour to my index.html just to make everything stand out a bit better and give the webpage a bit more life. You can also change the background to an image if you would like but it is image to set the properties correctly so that it fills the entire screen.
+                                <br><br>
+                                After that we can apply a border to an html element and that border can be dotted, dashed, hidden or several number of border styles. The border can also have many different styles of corners such as rounded. Next we added a hover element which means that whatever element we picked it would do a certain thing when you moused over it. It could change colour, expand, change transparency or anything that uses the hover tag. The next transformation that was added was a rotate and rotateY function to an element.
+                                This used along with the hover function means that when i moused over an a button of piece of text that element would rotate on an x and y axis. Finally we consolidated all of what we had placed in our html index.html file and sorted them into lists that could either be unordered or ordered. Within this we would then place buttons which we benefit us in the later stages of development. </p>
+                                <br>
+                        </div>
+                    </div>
+
+
+                     <div class="row-fluid">
+                         <div class="col-md-12"><h2>Log 3 (HTML/GUIs)</h2></div>
+                             <div class="col-md-12">
+                         <p>For the third lesson we used BlueGriffin which is a GUI editor in order to change the layout and some styles of your site very easily without the use for actual code. The website is opened in the editor and then using the features on the editor you can work from there. The editor can also be used to design and edit tables easily. Using this editor i changed the header text, the font, added a new table and then saved the file.
+                             <br><br>
+                             Once we were finished with the GUI editor we then took our html page and placed it into the w3 validator which checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc. This is very handy to make sure it conforms to the necessary standards in computing. Finally we used terminal and a site called github from which we would host our webpage. This would involve locating and initialising the files for github and the webpage using terminal.
+                             After this we could add new files, commit changes or push these changes to the repository.</p><br>
+                        </div>
+                    </div>
+
+
+                    <div class="row-fluid">
+                        <div class="col-md-12"><h2>Log 4 (Internet Architecture)</h2></div>
+                            <div class="col-md-12">
+                            <p>On the 4th lesson of our NVQ we covered Client servers, protocols, the backbone of the internet, shared domains , cloud computing and RSS. Firstly we learned about client servers which uses a central server where many computers connect the internet or a network. The general hardware and software items we will need is a PC, a network card, a modem, a router and the initial internet browser. There are also several bandwidth technologies that can be used which are PSTN (public switch telephone network) , ISDN (integrated services digital network), and DSL (digital subscriber line). Next we learnt about several protocols which state how data is sent over the internet.
+                                Transmission Control Protocol (TCP) defines how packets are created ready to be sent via IP and then put back together by the recipient. User Datagram Protocol (UDP) are essentially smaller packets without error checking. Simple Mail Transfer Protocol (SMTP) is creating and sending email packets. Post Office Protocol Version 3 (POP3) is the receiving and checking end of email packets. Hypertext Transfer Protocol (HTTP) uses TCP/IP to transfer HTML and File Transfer Protocol (FTP) uses TCP/IP to transfer files. Next we learnt about the OSI model which is the Open Systems Interconnection which is a model that defines the networking framework to implement protocols in seven different layers. These layers are (bottom) Physical, Data Link, Network, Transport, Session, Presentation and Application.
+                                After this we learnt about the Internet Backbone which entails point presencing and Point connections. Point-to-Point (PPP) is a data link protocol used to establish a direct connection between two nodes. It can provide connection authentication , transmission and encryption. The internet backbone can therefore be described as principle data routes between large strategically interconnected computer networks and core router on the internet. These data routes are normally hosted by commercial, government and high capacity network centres.
+
+                               <br><br>
+                                Next we looked over Domain Name System (DNS) which is a basically a phonebook for IP addresses using a general naming structure. <br>
+                                Example-   	HTTP://WWW.EXAMPLE.COM <br>
+                                name	        extension <br>
+                                sub-domain  <br>
+                                prefix <br>
+                                domain name <br><br>
+
+                                Next we moved on to shared domains which uses the sub domain part of the address to use separate parts of a server that has been located via its domain name.  Cloud computing uses a network of remote servers hosted on the internet to store, manage and process data rather than a local server.
+
+                                </p>
+                                <div style="font-weight: normal">
+                                <table style="font-weight: normal">
+                                    <tr>
+                                        <th>Pros</th>
+                                        <th>|</th>
+                                        <th>Cons</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Disaster recovery</td>
+                                        <td>|</td>
+                                        <td>Internet Connectivity Required</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accessibility</td>
+                                        <td>|</td>
+                                        <td>On-going costs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Environmentally Friendly</td>
+                                        <td>|</td>
+                                        <td>Security</td>
+                                    </tr>
+                                </table></div>
+                                <br>
+                                <p>
+                                Finally we concluded with RSS which is really simple syndication. This is a standardised XML format that can be consumed by an aggregator which is essentially a reader.
+                            </p><br>
+                        </div>
+                    </div>
+
+
+                        <div class="row-fluid">
+                            <div class="col-md-12"><h2>Log 5 (Internet Communication)</h2></div>
+                                <div class="col-md-12">
+                                <p>This lesson covered all the legislation that exists over misusing internet based forms of communication. The current legislation at the minute is very vague when it the major details. the 1988  Malicious Communication Act has had to be interpreted to including modern day forms of communication which includes tweets and messages. Trolling online can also be classified as a criminal offence in the modern era. In my opinion this is quite a lot of disparity between current legislation and what is considered ethical online. For example the current legislation does not fully cover laws between adults and minors online as it is very vague with several loop holes. Next we looked at the concept of a distributed workplace which is essentially enabling employees to make better use of the internet and mobile communications to better improve their quality of work. The of VoIP (Voice over internet protocols) and VoIP phones has enabled employees to make calls over the internet to other colleagues as well as host conference calls that means meetings can be attended from several different locations. The use of presencing or presence detection means that the company can keep tabs on each individual employee on their location as long as they agree to use the company provided handset. Next is mobile technology which is a technology that allows transmission of data, voice and video via a computer or any other wireless enabled device without having to be connected to a fixed physical link. This can come also be put in together with technologies like VoIP and the use of VoIP phone. We then discussed call/contact centres which are dedicated centres to take the calls of businesses and their employees as a first line of contact. Once the call has been received through a formal message tailored with the business in hand they will then check if the employee is available to take the call or not. Finally in a distributed workplace we learned about the conversion of voice to text technology which is fairly easy to understand and comprehend. This involves using a mircophone to speak to the device/computer and once the program has been properly set up it will then transfer onto the screen what you said in text. The system can be hard to use at times as it is difficult to train it to understand dialects and accents.
+                                    <br><br>The next section we covered looks at the uprising of social media and how it can be used to their advantage in terms of online presence. Social media can be defined as websites and applications that enable users to create and share content or to participate in social networking. An example of a social networking sites are Twitter which is essentially a form of communication site limited to 140 characters which steers the user towards short meaningful messages. Another example is YouTube which is a media sharing platform which allows viewers to either like/dislike or comment under each video giving their opinion on the video. Over the years this has exploded into a wide media platform where content creators have full time jobs producing videos and other content. Another way of communication over the internet is through the use of a blog which is a regularly updated website or web page, typically one run by an individual or small group, that is written in an informal or conversational style. It is essentially a journal or a diary by either a company or a person that can be read and interpreted by many. The main elements of a blog start with a basic title followed normally by the date and the person who wrote the blog. Within this there is usually sub headings and paragraphs/pictures that can be informative or just as diary purposes. A folksonomy is a system in which users apply public tags to online items, typically to aid them in re-finding these items.  Next we discussed the elements of a news feed service. This is a data format used for providing users with frequently updated content. A content provider publishes a web feed link on its site which users then register to the feed and will then be updated regularly with content.
+                                </p><br>
+                            </div>
                         </div>
 
-                        <p class="comment-text">On the First day of our NVQ we created our first html webpage using a program called phpstorm. Once our main index.html page was created we use a very basic structure and also set the doctype. The doctype describes to the document the document type definition i.e a particular version of HTML. In the index.html we added several elements which includes a header, a paragraph, a table of contents and a link. The paragraph was defined with the p tags.
-                            The header was the largest size of header so it was defined as an h1 tag. The next addition was a table of contents which starts off with a table tag and using different tags can define rows, data and headings. The row is defined by tr, the data is defined by td and the table heading is th. The elements can then be styled either using inline styling which is by using the style attribute in html elements, internet styling which uses a style element in the head section and lastly external styling from a css file (cascading stylesheet).
-                            The method i opted for was to use an external stylesheet from which I could style all my items or give them tags to separate them. After this we created an audio file using the onboard microphone and converted it to .m3a and .ogg so it could be read by all devices.
-                            We then created an audio element using the audio tag and gave it full controls and no autoplay so the user could choose whether they listen to it or not. Once we completed all this we then optimised our site so it could be read from a lynx browser, by giving each of our link, picture and audio elements a textual secondary description. Once all this was completed we then had a fully functional index.html webpage. From here we could next add many features and expand to new html pages.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="comments-list">
-                <div id ="div1" class="row">
-                    <div class="col-sm-12 col-xs-12">
-                        <a><h3 class="user-name">Html/Css 2</h3></a>
-                        <div class="card-data">
-                            <ul>
-                                <li class="comment-date"><i class="fa fa-clock-o"></i> 14/09/2016</li>
-                            </ul>
+
+                        <div class="row-fluid">
+                            <div class="col-md-12"><h2>Log 6 (Network Maintenance and Issues)</h2></div>
+                            <div class="col-md-12">
+                                <p>During this lesson we focused on the importance of keeping your network and computer properly maintained in order to prevent an problems further down the line. The first area we will look at is how we will secure our pcs and our servers to prevent them from attacks and if they are attacked how to deal with it. The easiest way to keep a computer up to secure is to keep it up to date allowing the computer to have all the necessary patches that it needs. After this the user should install an intruder detection which monitors for malicious activity as well as policy violations. After this it will be key to close an non essential network ports to prevent any unnecessary attacks. However if staff are well trained and vigilant as to what they are clicking on then they should have no problem to prevent any future attacks and keep the PCs/Servers secure.
+                                    <br><br>
+
+                                    After this we looked over what exactly is the standard procedure if you do get attack and how you should take steps to deal with this. Once you notice an attack the most important thing to do is disconnect from the network as WORMs are able to travel across the network to other machines and viruses may leach onto other files. Once this has been done it is now time to act fast and identify where about the attack has come from and what type of an attack it is. If it is internal you should have already disconnected the machine from the network but if it is external you should begin to block the IP. If however it is a DDoS (Distributed Denial of Service) which is essentially overloading the system with requests so that it unable to fulfil its main requests and keep up so it eventually goes down. This is very illegal with a maximum 10 years in prison. Once all prior checks have been done begin to back up data incase it gets worse or you are unable to stop it in time. If you have backed it all up this will be vital to stop future attacks as it may give you an insight as to how they entered the system so you can analysis the data and possibly make future changes.
+                                    We then discussed what social engineering was and how we would take the necessary steps to prevent any of this happening in the future. A social engineer essentially try to make some believe they are someone else so they hand over confidential information about the business or another user. This can be used to gain access to the business system which can lead to future attacks and destruction either internally or externally. They may also claim to be someone else by stating certain information about your business which is just to lure you into giving them what they want. The best way to start avoiding this is to have a certain level of authentication or security questions that are specifically tailored to the user at hand. If you are contact by someone you could ring that so called persons home number to check legitimacy and this also works if you have been contacted by other companies looking to get information from you. Once you have been contacted by someone it is important to then adjust your security details to prevent someone from attempting to repeat the same action again with possibly better results for them.
+                                    <br><br>
+                                    After this we began to look at different levels of encryption. These were split into symmetric and asymmetric encryption. Symmetric encryption are algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext. The keys may be identical or there may be a simple transformation to go between the two keys. Asymmetric Encryption is a form of Encryption where keys come in pairs. What one key encrypts, only the other can decrypt. The keys are interchangeable, in the sense that if key A encrypts a message, then B can decrypt it, and if key B encrypts a message, then key A can decrypt it. The big difference is that asymmetric algorithms use different keys for encryption and decryption.
+
+                                    Next came authentication principles which break down how a user and the business is kept secure throughout the duration of their session. Each user will have their own account equipped with username and password that will also have extra secure features that include special keys and secure questions that only the user should know the answer to. Once they are in the system each user will have their own level of functionality within the system. For example will have access to a lot more controls than a standard employee would. This adds to the level of security so standard employees do not have free reign of a possible security risk. There are many ways in which a user can authenticate themselves to enter the system. They could use PIN or password along with a username which is unique to them if it was to enter a computerised system or if it was another type of system then the best thing to use may be biometrics which can use finger prints, voice prints, retina scans or even palm prints. Another authentication principle is the use of periodic challenging means if the user leaves their terminal or hasn’t been doing work for a certain amount time it will then lock their account and a password will be required to reopen it again. This is something used by apple on their app store which will prompt the user to enter their password either after every purchase or every 15 minutes to make their accounts more secure. Securing the connection is the final authentication principle we covered and basically it covers whenever the user enters their username or password it is then encrypted and given a key in which there is a key attached to so if it is intercepted it can not be stolen by anyone else.
+                                    <br><br>
+
+                                    After this we learnt about Mobile Device Management which is the term given to managing mobile technology devices that have been handed out for use by the company. There are five main steps that are involved and they are as follows.
+                                    <br>
+                                    Provisioning- This refers to the initial company set up with the network provider<br>
+                                    Using- The general use policy that the user must follow in order to treat it as a work device<br>
+                                    Maintaining- This is to do with the proper maintenance required to keep the devices hardware and software fully operational for business use.<br>
+                                    Monitoring- It is imperative that the company must monitor certain devices as their use should not be abused.<br>
+                                    Decommissioning- This is the final stage of the devices life with the user where it is either wiped and set up for new use of it has final reached the end of its life cycle.<br>
+
+                                    <br><br>
+                                    After that we discussed the possible security threats than can be face using a cloud based service. A cloud based service involves using the internet to store data on instead of actual stand alone hardware that would only take up space as well as energy. I will do a brief breakdown of several threats that an cloud based service could face throughout their lifetime. The cloud could face attacks from Data breaches which are similar to the threats and attacks that traditional corporate networks face. The exact reason people target cloud servers and data stores is due to the vast amount of data that is actually stored on them as they know once they are in they have access to so much. It is important that companies are well protected against they external attacks as when they are hacked and their data goes missing they may incur a fine or criminal charges placed against them. Another threat that they may face is an internal one which is malicious insiders. These are people who work for the company or have previously worked for the company who decide to try and steal precious data or even take down the system from the inside by deleting essential bits of data. Following on from this can also bring another threat which is permanent data loss. This is essentially when someone has accessed the system they delete key data for good in such a way that it is unable to be recovered. This can also be caused by error from the employer as well if they fail to create adequate backups of all data that is stored. However the data loss can come from the user themselves because if they chose to encrypt all data before it is moved to the cloud they must not loose the key because whenever they lose the key, they lose their data. The final threat that I will describe is DoS (Denial of Service) attacks which involves flooding the the cloud with vast amounts of information and requests all in one go in an attempt to take it down and possibly expose a weak link. Although these attacks can be deadly it is possible to prevent them or report them.
+
+                                    Next we discussed continuous data protection and how it is important to be constantly backing up data in order to prevent loss of data if an attack was to happen. Although it is possible to continuously backup data it does require a large amount of network usage. It is important to prioritise certain data in levels of back up importance. More important data should be backed up more frequently that other types of data. If this data is key to keeping the system running then it is important that it is secured first.
+
+                                    To finish with we then looked at IP Troubleshooting which in order to start this you must check if the computer/machine you are using has TCP/IP enabled as this is important. In order to check if the computer itself has an IP assigned to it you can either use ipconfig for windows and ifconfig for mac. This will display details about the computer as well as the IP you are looking for. To check if it is working you can then use a PING which sends a small packet to a particular IP address in order to check if the network connections are intact. After this you can perform a DIG command which essential performs a DNS(Domain Name System) as another check for whether or not it is properly connected to the network. You can also TRACE ROUTE to see if the network and the intended destination are making the correct connection.
+
+                                    <br><br>
+                                    Next we covered remote access protocols which essentially controls how data is transmitted across a network from the server to a workstation. A Public Key Infrastrucutre supports the identification of public encryption keys which then enables the user and their workstation to securely transfer data over a network such as the internet. A public key is used to ensure the identify of the user by use of authentication of the other party.
+
+                                    A public key infrastructure is a set of roles, policies and procedures needed to create, manage and distribute use, store and revoke digital certificates and manage public key encryption. The purpose of a PKI is to facilitate the secure electronic transfer of information for a range of network activities such as e-commerce, internet banking and confidential email. It is required for activities where simple passwords are an inadequate authentication method and more rigorous proof is required to confirm the identity of the parties involved in the communication and to validate the information being transferred.
+
+                                    A Bring Your Own Device Policy (BYOD) essentially allows employees to bring their own devices to their places under certain levels of permission. There must be a strict policy put towards what devices are actually permitted as certain software used by the company may only certain certain types of phones/laptops/pcs. The user must agree to then establish certain levels of security on their device so that if it is lost or stolen anyone can not access vital information about the company. Another policy to implement along with the BYOD policy would be an acceptable use policy which decides what apps can be used and what websites can be accessed under this policy. It also will allow the company to monitor the user to ensure that maximum work effort is being achieved. Finally a very important point to remember is what to do whenever the employee exits the company and how the levels of access and authority will be removed from any devices that they have set up.
+
+                                    <br><br>
+                                    We next looked at how we would troubleshoot problems when it came to different types of connection to the internet. The connections we looked at were cable and ASDL connection. The best way to diagnose and fix your internet connection is simply to turn it off for 10 seconds and then turn it back on again. Most of the time this fix will work but if it doesn’t then you may need to look at more in depth fixes to work out the problem. After this you should follow all your connections back to make sure the correct cables are connected in the correct holes. For example your ADSL connection has not come loose or even the power cable is sitting loose. You should then perform a DNS check which tells you whether it is a problem with your internet or a problem with whatever you are trying to connect to online. If the problem stills persists then you may have to connect your internet provider and make arrangements for the problem to be fixed by them.
+
+                                    After this we learned about the steps that need to be taken in order to make sure that a computer will remain functional and in the future not come to a full system failure. It is imperative that all updates for the OS, the security software and any other programs are installed. Updates bring patches that allow the security of the system to constantly maintained so hard drives etc cannot be infected and ruined over time. After all these have been done it is important to make sure that the insides of your computer are properly cleaned using either compressed air or if the situation is very bad a selection of anti static cleaning wipes and solutions. Dust can lie on fans and prevent them from working to maximum effectiveness which over time will cause your computer to work harder and overheat. After this we then discussed why a hard drive should be partitioned and formatted and what is the main reasoning behind this. Disk partitioning is separating one physical hard drive into multiple independent volumes. Disk partitioning or disk slicing is the creation of one or more regions on a hard disk or other secondary storage, so that an operating system can manage information in each region separately. Partitioning is typically the first of preparing a newly manufactured disk before any files or directories have been created. For example if we you were to install a new operating system such as ubuntu it would be necessary to partition and format the hard drive as it will be a fresh new start. Disk formatting is basically the second part of the process, making the data storage deice visible to an operating system.
+                                    <br><br>
+                                    Finally we learnt about the network file system (NFS) which is a client/server application that lets a computer user view and optionally store and update files on a remote computer as though they were on the users own computer. The NFS protocol is one of several distributed file system standards for network attached storage. NFS allows the user or system administrator to mount all or a portion of a file system on a server. This is split into several layers which is the application layer, the transport layer, the internet layer and the link layer.
+
+                                    Client side problems refer to problems which are caused by the client in a client server relationship in the computer network. Server side problems are problems which are created by the server which has very different problems that can be established. Problems created by the client can simply be clicking on unsecure websites and links so the computer has become infected and caused internal problems with the computer. These problems can be prevented by properly educating the users of the system properly on how to operate safely on the client side. The other problems that can be addressed are server side problems which refer to internal problems with the server that can be such things as memory failure which can cause internal problems with the overall system.
+                                    <br><br>
+                                    After this we looked at how different components functions in relation to network servers. The first component we looked at was the motherboard which is essentially the processing section of the server which will hold the processor and the RAM which is all essential to have a fast server. The next component we looked at is the storage disk which is used for general storage of data on the server. Finally we looked at optical disks which can either be used to install updates to the server or even used as storage devices to store backups.
+                                    <br><br>
+                                    Finally we looked at how to identify boot problems that you may have at the beginning of your system. You can notice certain problems by noticing that once you load up your computer it does not continue to the main screen but it gets stuck in the loading process. Whenever the computer starts up you should check whether or not you actually get any sound from the fans or even components within the computer. After this you can listen for beeps from the BIOS and motherboard which will display a standard one beep for working but if it is not it will start to beep out a code. If all of this is fine then the next step would be to look out for the main BIOS screen as to whether it displays and if it does then try and use the recovery function.
+                                </p><br>
+                            </div>
                         </div>
-                        <p class="comment-text">The second lesson of our NVQ revolved around adding styling as well as some transitional elements to the index.html page to make it look up to a high standard before we moved on to a new one. We began by adding a text effect to any html element. I choose the header and decided to add a b tag to make it stand out in bold. However you can choose italics or sub/superscript all by placing short tags around the word or sentence you would like to style it.
-                            It all depends on how much you would like your text to stand out. After this i applied a background colour to my index.html just to make everything stand out a bit better and give the webpage a bit more life. You can also change the background to an image if you would like but it is image to set the properties correctly so that it fills the entire screen.
-                            After that we can apply a border to an html element and that border can be dotted, dashed, hidden or several number of border styles. The border can also have many different styles of corners such as rounded. Next we added a hover element which means that whatever element we picked it would do a certain thing when you moused over it. It could change colour, expand, change transparency or anything that uses the hover tag. The next transformation that was added was a rotate and rotateY function to an element.
-                            This used along with the hover function means that when i moused over an a button of piece of text that element would rotate on an x and y axis. Finally we consolidated all of what we had placed in our html index.html file and sorted them into lists that could either be unordered or ordered. Within this we would then place buttons which we benefit us in the later stages of development. </p>
-                    </div>
+
+
+
+                            <div class="row-fluid">
+                                <div class="col-md-12"><h2>Log 7 (Principles of Internet Security)</h2></div>
+                                <div class="col-md-12">
+                                    <p>Encryption is the most effective way to achieve data security. To read an encrypted file, you must have access to a secret key or password that enables you to decrypt it. Unencrypted data is called plain text ; encrypted data is referred to as cipher text. The first major type is Wired Equivalent Privacy (WEP) which intention was to provide data confidentiality comparable to that or a traditional wired network. Wifi Protected Access (WPA) and Wifi Protected Access 2 (WPA2) are both security protocols and security certification programs developed by the WiFi alliance to secure wireless computer networks. In WPA there is a 256 bit key while WPA2 uses AES encryption.
+
+                                        Next we discussed ways that authentication, digital certificates, encryption and firewalls will provide necessary web security. Authentication allows access control of users systems located on the web. The user will be prompted to enter some form of id or even a username or password. Digital certificates allow for identification of entities on the web. Encryption allows to send data securely over the web using a key in order to convert it to something readable for the user. Finally firewalls prevent malicious things from gaining access to your computer as they are stopped and checked first.
+                                        <br><br>
+                                        After this we looked at and discussed how encryption helps enforce, data confidentiality, data integrity and non repudiation to secure end users transactions. The idea of encryption is that it only allows the intended recipient to read what the message says. Encryption enforces integrity when it uses a hash that corresponds to the data being sent and therefore if the data was altered would not be able to decrypt successfully. It is very important that once the user receives the key that they do not lose the key as it is the only thing that is able to decrypt their work. After this we discussed the difference between viruses and WORMS. A virus is a piece of code that can copy itself  and make its way along with a file to destroy the rest of a system.  A worm is a lone piece of malware that replicates itself in order to spread among other computers. It uses the computer network to travel along where as a virus needs to attach itself to a program. Once we distinguished the difference we then talked about how we would go about preventing a virus from getting on the system in the first place. Regular updates of all anti virus systems and the OS will help make sure that all the necessary patches are there to stop these viruses and WORMs. A major way to stay safe online is to use common sense when opening files and be very vigilant when connecting to open or free wifi networks as these can be easily manipulated. Updates and patches are software file or bits of code that contains fixes for problems found by other users or the software developer. Installing an update fixes the code and prevents the problems re-occurring.
+
+                                        Once we worked out how to spot and stop a virus we then worked out what to do whenever a virus is either in your system or you suspect one may be in your system. Once you notice a virus it is very important  to completely remove yourself from the network to prevent it from spreading itself across the network to other devices and possibly corrupting your entire system. After this you may run an anti virus scan  and once they have been isolated remove them from the system. If back ups have not been performed by the anti virus system then it is important to back up all essential files.
+                                        <br><br>
+                                        After this we then discussed what to do if you received an unexpected email that you do not know what to do with. If the email is from someone you know then you should contact them in reference to it to see whether they meant to sent it or not and once they confirm this you may pass it through your security software to make sure it is safe. If the email is not safe you should report it as a scam or whatever is necessary and then delete the email from your email server. It is very important that you do not open the email as even for a second you can infected your computer with viruses that can destroy the computer from the inside without you even knowing. After this we worked out what to do if an attack has been detected towards the system. Whenever an attack has been first suspected it is important to make sure that you find out where the attack is coming from an isolate the port where the network cable is connected to. Inform your ISP so they can assist you in detection and prevention of any further attacks that may happen towards your system. You should work out where the attack has come from and see whether it is an internal attack or if it is a foreign attack coming from outside the company. Make sure to back up data the rest of the data in your system in case it gets lost. Once the system is safe you can refer to the back ups to populate all the information that was lost.
+
+                                        Spyware is software installed on a computing device without the end users knowledge. Such software is controversial because even though it is sometimes installed for simple monitoring reasons, it can violate the end users privacy and has the potential to be abused. This type of software is used to monitor employees to see what kind of websites and apps they are visiting and using. This could be very important to a business as it is important to keep work productivity at a high and reducing slacking off. However this kind of software can be used for malicious intent where a third party app can be hidden embedded in the phone and used the camera and microphone to record the users movements etc as well as record their phone calls and their overall generally phone use. After this we looked at privacy concerns in relation to using the internet. This can come in many forms such as online trolls, malicious ads, or third party embedded software. Now a days it is all about staying safe on the internet and using common sense. It is important to make sure that you do not go onto sites that look like they may be dangerous and filled with viruses so it is important to only use websites that are not dangerous and secure. If they look like they are not safe then you may use certain websites to check the authentication of the site. There may be loads of dangerous adverts and viruses placed within web pages so you should not click on any ads and make sure you should be vary of what is on the site.
+                                        <br><br>
+                                        After this we learnt about copyright issues. Copyright is a legal right created by the law of a country that grants the creator of an original work exclusive rights for its use and distribution. This is usually only for a limited time. The exclusive rights are not absolute but limited by limitations and exceptions to copyright law, including fair use. It is important whenever you are designing a website that if you use anything from across the internet that you get permission from the creator of the content if it is covered by copyright law. However if you do decide to use it you can make you’re own but base it on the underlying idea instead of the original expression.
+
+                                        Data encryption refers to the process of transforming electronic information into a scrambled form that can only be read by someone who knows how to translate the code. Companies often communicate with each other regarding sensitive business operations therefore it is important to make sure that if anyone manages to intercept these messages it is important to make sure they are secure.
+
+                                        The Right to be Forgotten act passed by the European Union allows individuals to have certain online queries about themselves removed from listings. They are able to fill in a simple form which will access if the results outweigh the persons privacy rights.
+                                </p><br>
+                                </div>
+                            </div>
+
+
+
+                                    <div class="row-fluid">
+                                        <div class="col-md-12"><h2>Log 8 (Javascript 1- Essential Javascript Principles and Practices)</h2></div>
+                                        <div class="col-md-12">
+                                            <p>Javascript is a programming language that is used to essentially make all the feature on a website more interactive so that they actually work and have a purpose. It controls the behaviour of the website and can be very powerful in making your website do certain things that can turn a static webpage into a fully functioning dynamic webpage.
+
+                                                An object with regards to programming concepts is a an element of a programme that represents a particular entity. It can be a variable a data structure or a function or method and as such is a location in memory having a value possibly referenced by an identifier. A property is essentially an object that can be assigned by a value.  A property is a special sort of a class member between a field and a method. A method is an encapsulated part of a programme that receives, processes and may return data. It is a procedure associated with a message and an object. Data is represented as properties of the object and behaviour as methods.
+
+                                                Over the years javascript there have been various versions of javascript each with different functions and features that have been updated over the years. One of the most well known ones is JQuery which is a cross platform library designed to simplify the client side scripting of HTML. The way the syntax is used is meant to make it easier to navigate a document through the use of DOM elements, the creation of animations, the way it handles events and develop AJAX applications. Another version in the javascript framework library is which dealt with various functions for developing JavaScript applications.  One of the the features was the implementation of programming shortcuts to major functions such as XMLHttpRequest. There is also added support to classes and class based objects through library functions implemented in the framework. AngularJS is a complete JavsScript based open sourced front end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single page applications.
+                                                <br><br>
+                                                The difference between client side and server side scripting depends on where the scripts are running and being executed from. If you are sending scripts to the browser to be run then it is client side however if the scripts are running behind the scenes from the server then they are server side.
+
+                                                The idea of having your code properly formatted is imperative to making stand out more. This will make it easier for yourself and other programmers who are looking at your code to understand it in the way it is more consistent and placed in a logical manner. Writing your code in such a way that it can be used several times throughout your project will not only make things easier for you but it will make the time taking to complete the project become several decreased. Naming conventions is making sure that all items that require an ID have an ID fully attached to them so whenever it comes to referring back to them in later stages of development you will have less problems and less stress needed to give them all IDs later. The idea of commenting within code is good practice as it allows the programmer to remember what exactly a section of code does without having to look it up or try and remember from memory. This will also enable other developers to look at your code and understand it as well. Finally it is all about making your code perform complex functions but keeping the process very simple. If 100 lines of code can be written in 10 lines it makes it much easier for the overall aesthetics are functionality of the project.
+
+                                                The Operating System of a machine will have elements of built in security such as firewalls and anti virus which aid the user in detection and prevention of security issues. The security software will manage the traffic of files into the computers hard drive and check them for potential threats against the system. However JavaScript security is the security that is placed on websites that is concerned with the scripts that are run when the website loads.
+
+                                                The are many issues when it comes to keep your browser safe as they can come under fire from my different types of threats each will the sole purpose of destroying your system or getting your data. One of these is called cross site scripting which is a type of computer security vulnerability typically found in web applications. It enables attackers to inject client side scripts into the web pages in an attempt to gain control of the website and access controls if the website is not properly protected. Another type of attack is SQL injection which refers to an injection attack wherein an attacker can execute malicious SQL statements that control a web application's database server.
+                                                <br><br>
+                                                Finally we looked at signed scripts which is the process of adding a digital signature to a script so that the source executing the script can be authorised. A digital signature is the mathematical scheme for demonstrating the authenticity of a digital message or documents.
+
+                                                Debugging javascript code is important to understand if there are going to be any problems with your system in the long run. You can use the console in an attempt to debug code as it will display errors in your system in which you can use to correct the main code. Another way to debug the code is isolate certain sections of code and run them all separately to see how they react on their own.
+
+                                                Native debugging tools include certain tools such as breakpoints or even console logs. Breakpoints are are the intentional stopping or pausing of the code in a program in order to gain more knowledge about that certain section. The use of the console is used in debugging as once you one all the code on a certain page it will then flag up with warnings as to where you went wrong. The errors could be certain functions not executing properly or even it does function correctly but there is a possibility of a greater area behind the scenes.
+
+                                                Cookies are defined as a packet of data sent by an internet server to a browser which is used to identify the user or track their access to the server. Essentially a web server will use cookies to monitor the users to their site and what they access and store data about them to be used for further reference. A cookie can be used to save login information to a website so that user will not have to constantly type in their data about themselves.
+
+                                            </p><br>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row-fluid">
+                                        <div class="col-md-12"><h2>Log 9 (Programming Techniques)</h2></div>
+                                        <div class="col-md-12">
+                                            <p> Concatenation and addition both use the + symbol but they use it in very different ways to provide very different answers. The symbol when concatenating is used to simply make a join between two bits of data. For example if your input code showed (“1 and 1 concatenated is “ +1+1); then the output would provide the answer of 1 and 1 concatenated is: 11. However when using the + operator is used within brackets in order to force the addition expression to happen first. For example if your input code reads (“1 and 1 added: “ + (1+1)); then the output would be provided as 1 and 1 added is 2. There is a big difference between global and local variables in the overall ways that they are accessed in the program. A global variable is a variable that do not change and are used constantly throughout the program such as a  certain mathematical formula. Local variables however are typically used a single function or method meaning that the name for it can be used several times throughout the program. Local variables can also be removed from memory whenever they are not needed and only using local variables where possibles limits the amount of bugs.
+                                            </p><br>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row-fluid">
+                                        <div class="col-md-12"><h2>Log 10 (Applied Javascript)</h2></div>
+                                        <div class="col-md-12">
+                                            <p> An object with regards to programming concepts is a an element of a programme that represents a particular entity. It can be a variable a data structure or a function or method and as such is a location in memory having a value possibly referenced by an identifier. A property is essentially an object that can be assigned by a value.  A property is a special sort of a class member between a field and a method. A method is an encapsulated part of a programme that receives, processes and may return data. It is a procedure associated with a message and an object. Data is represented as properties of the object and behaviour as methods.
+
+                                                Over the years javascript there have been various versions of javascript each with different functions and features that have been updated over the years. One of the most well known ones is JQuery which is a cross platform library designed to simplify the client side scripting of HTML. The way the syntax is used is meant to make it easier to navigate a document through the use of DOM elements, the creation of animations, the way it handles events and develop AJAX applications. Another version in the javascript framework library is which dealt with various functions for developing JavaScript applications.  One of the the features was the implementation of programming shortcuts to major functions such as XMLHttpRequest. There is also added support to classes and class based objects through library functions implemented in the framework. AngularJS is a complete JavsScript based open sourced front end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single page applications.
+                                                <br><br>
+                                                The difference between client side and server side scripting depends on where the scripts are running and being executed from. If you are sending scripts to the browser to be run then it is client side however if the scripts are running behind the scenes from the server then they are server side.
+
+                                                The idea of having your code properly formatted is imperative to making stand out more. This will make it easier for yourself and other programmers who are looking at your code to understand it in the way it is more consistent and placed in a logical manner. Writing your code in such a way that it can be used several times throughout your project will not only make things easier for you but it will make the time taking to complete the project become several decreased. Naming conventions is making sure that all items that require an ID have an ID fully attached to them so whenever it comes to referring back to them in later stages of development you will have less problems and less stress needed to give them all IDs later. The idea of commenting within code is good practice as it allows the programmer to remember what exactly a section of code does without having to look it up or try and remember from memory. This will also enable other developers to look at your code and understand it as well. Finally it is all about making your code perform complex functions but keeping the process very simple. If 100 lines of code can be written in 10 lines it makes it much easier for the overall aesthetics are functionality of the project.
+
+                                                The Operating System of a machine will have elements of built in security such as firewalls and anti virus which aid the user in detection and prevention of security issues. The security software will manage the traffic of files into the computers hard drive and check them for potential threats against the system. However JavaScript security is the security that is placed on websites that is concerned with the scripts that are run when the website loads.
+
+                                                The are many issues when it comes to keep your browser safe as they can come under fire from my different types of threats each will the sole purpose of destroying your system or getting your data. One of these is called cross site scripting which is a type of computer security vulnerability typically found in web applications. It enables attackers to inject client side scripts into the web pages in an attempt to gain control of the website and access controls if the website is not properly protected. Another type of attack is SQL injection which refers to an injection attack wherein an attacker can execute malicious SQL statements that control a web application's database server.
+                                                <br><br>
+                                                Finally we looked at signed scripts which is the process of adding a digital signature to a script so that the source executing the script can be authorised. A digital signature is the mathematical scheme for demonstrating the authenticity of a digital message or documents.
+
+                                                Debugging javascript code is important to understand if there are going to be any problems with your system in the long run. You can use the console in an attempt to debug code as it will display errors in your system in which you can use to correct the main code. Another way to debug the code is isolate certain sections of code and run them all separately to see how they react on their own.
+
+                                                There are several components used in effectively running a network server such as a motherboard, storage devices and also optical devices. The motherboard essentially holds all the processing power of the server with the CPU and the RAM used together to keep the server running quickly. The storage devices that the network server use and for basic storage of data either from databases or other types of data systems. Finally the optical disks are used for high levels of storage as well as the backups that may need to be completed.
+                                            </p><br>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row-fluid">
+                                        <div class="col-md-12"><h2>Log 11 (Principles of Database Concepts)</h2></div>
+                                        <div class="col-md-12">
+                                            <p>A relational database is a database which is structured to recognise relationships between stored items of information in a database. The are organised into a set of formal tables from which data can be accessed or reassembled in many different ways without having to reorganise the database tables. There is a big different between what a relational database and what a non relational database is.
+
+                                                A relational database will be linked through the use of a key and as previously said will have a formal structure which allows data to be processed with the corresponding tables and then returned to the user. A Non relational database is different in the way that it has a more informal and unstructured store which whenever more data is added can be expanded freely. This allows for more back end flexibility and makes it much easier for the user to use due to the rate of speed it retrieves data at.
+
+                                                There are several different types of relationships between tables such as one to one, one to many and finally many to many. A one to one relationship basically defines when each row in one database is linked 1 to 1 with a row in another table. In a one to many relationship each row in the table can be related to many rows in another table. This refers to a save once use many times in other tables.
+                                                <br><br>
+                                                Finally in a many to many relationship one or more rows in a table can be related to either 0, 1 or many rows within another table. The final database concept we learned about was SQL and the purpose it held in querying databases. SQL is essentially a programming language that revolves around databases and the rules and criteria that come with.
+
+                                                SQL is very powerful and can turn a very simple system into a more complex and dynamic one capable of storing data and referring to it as well. Some examples of database vendors include mySql, Oracle, MySql Server, Redis and MongoDB.
+                                            </p><br>
+                                        </div>
+                                    </div>
+
+
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12"><h2>Log 12 (Javascript 4- Javascript Technology Extensions)</h2></div>
+                                    <div class="col-md-12">
+                                        <p> This log is another log on Javascript which looks at different plug ins and libraries that can be used. There are a large number of benefits and drawbacks of using external libraries and plug ins.
+                                            </p>
+
+                                        <div style="font-weight: normal">
+                                            <table style="font-weight: normal">
+                                                <tr>
+                                                    <th>Pros</th>
+                                                    <th></th>
+                                                    <th>Cons</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Share Resource Hosting</td>
+                                                    <td></td>
+                                                    <td>Deprecation or lack of support</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Familiarity</td>
+                                                    <td></td>
+                                                    <td>Vulnerability</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web Caching	</td>
+                                                    <td></td>
+                                                    <td>Security</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reusability</td>
+                                                    <td></td>
+                                                    <td>Cross site Issues (scripting)</td>
+                                                </tr>
+                                            </table></div>
+                                        <br>
+                                        <p>
+                                            The first way to create and use javascript libraries is to add in a script tag with a type that is text/javascript. This means that the javascript can be used freely as long as it has been referenced correctly whenever you decide to use it. The script should be added to all of the pages that will use the library. Once the browser encounters the library the first time around it saves the containing code in cache in order to make requests the next time a lot quicker. You can also use external scripts or scripts that someone else has made earlier.  Firstly you will have to get the script by either downloading it or adding in the url of where you find the file online. After this follow the same referencing style you have initially completed for all of the scripts you have made before. Use the script tag and locate the source whenever it is needed to be used. Finally use an event handler to call the script on either a button/input tag or any other way you like.
+
+                                            After this we learnt about XMLHttpRequests and how they interact with XML. The XMLHttpRequest object has a responseXML method that javascript can use to parse the XML to obtain structured data. This was one of the more complex things that we achieved but it once understood we were able to perform powerful functions.
+
+                                            There are also several alternatives to XML based AJAX which include Server-send events (SSE), Web Sockets and Java applets. A Server sent event works as a web page that automatically gets the updates from a server. They do not have to check if any updates are available as they just do it automatically.
+                                        </p><br>
+                                    </div>
+                                </div>
+
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12"><h2>Log 13 (Understand Web Browsers)</h2></div>
+                                    <div class="col-md-12">
+                                        <p>The next part of our NVQ is getting an understanding of different web browsers and their features and plug ins that come with. Firstly we looked at the functions and components of URN and URI which define the name and the location of a resource. The URN is the name of a resource for example using the mail to resource as mailto:example@email.com. The URL is the uniform resource locator which is the location of a resource which would be what you type into your search bar for example http://www.google.com. After this we looked at how to deal with pop ups and external window pop ups that can happen. A lot of these pop ups contain adverts with malicious intent that are out to either gain sensitive information or destroy your computer from the inside. Majority of browsers have internal blockers built in but you are also able to install external ones that will prevent pop ups and adverts from appearing on the webpages you visit. All of this can be found within the plug ins and preferences setting depending on what browser you are using. There are also pieces of software that can be used to prevent all these pop ups from appearing on your computer.
+
+                                            Next we discussed the functions of SSL (Secure Sockets Layer), TLS (Transport Layer Security) and other encryption methods in securing communication for various protocols. Both SSL and TLS are used to transfer encrypted data by using a public key encryption method. There are several other protocols but one of the most common to appear with the two of them is PCT (Private Communications Technology). PCT is a protocol which is designed to provide privacy between two communicating applications such as a client and a server. Once a communication has been met then it will authenticate the server and if needed the client as well. All of these are used to securely send data as well as protocol data.
+                                            <br><br>
+                                            The are several terms used when referring to network types and how you connect to the network. These are intranet, extranet and finally the internet which are refer to connecting to a network they are just performed in different ways and each have different accessible resources. The first one is an intranet which is an internal system and set of resources that is only accessible on the users network. This is very popular in schools as they use the very unpopular c2k system to access their network. The next was Extranet which is when a internal system is able to be accessed from outside of its own network. This allows people like clients or suppliers to be able to connect and communicate to you within a closed virtual space. Finally we looked at the internet which is where resources are publicly accessed from all over the world by anyone. All you need to go to the internet is an internet connection , a computer and a web browser.
+                                            <br><br>
+                                            The internet and web clients can be used by anyone for their own gain but a lot of businesses can gain vital growth in their business by taking advantage of what the internet has to offer. Using the internet within a business allows them to work outside the constraints of a normal 9-5 working environment as they are able to sell or show off their goods 24/7 all over the world. They will eliminate the need for an office space by turning their business into an online virtual masterpiece. They are also able to use clients to communicate with other business partners or potential business partners remotely by holding online meetings and information sharing. The internet is a very powerful business asset that if used correctly can turn a 4 figure business into a 6 figure business in a very short space of time.
+                                            <br><br>
+                                            A browser provides a UI in which the user can search the web and utilise all of what the internet has to offer. There are several different browsers out there for many different platforms and all of them offer different functionality. Some browsers are a lot faster than others in the way that they are optimised but others are better suited to suit the user even though they are slightly slower. In the end of it all it is all down to personal preference as to what browser you decide on. Some examples of browsers are Google Chrome, Mozilla Firefox and Apples Safari. Most browsers also offer an anonymous/incognito which is essentially a form of browsing that does not store any of the browsing history or any data related to the browsing session. It is a common misconception that using incognito will prevent the user from being noticed from outside government bodies or hackers however this is not true as it will only deal with the browsing session. In order to access an anonymous browsing you would right click on the internet browser icon or go into settings to start a new session.
+
+
+                                        </p><br>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12"><h2>Log 14 (Web Diagram and Design)</h2></div>
+                                    <div class="col-md-12">
+                                        <p>On this section of our NVQ we covered Web Diagram and Design covering many aspects of webpages and history of the web.  In 1989 Tim Berners Lee first inverted the Web by creating HTML as its first publishing language. He also came up with the concept of HTML tags on the the Standard Generalised Markup Language (SGML) which became the base for a lot of languages to be based on. The most up to date version of HTML is version 5.0 and like most of the HTML version uses the same tags with newer ones added in to increase the overall functionality of the language. There are several other versions of HTML such as HTML 3.2, HTML 4.01 and XHTML. XHTML is Extensible Hypertext Markup Language which is essentially like HTML except the users can invent their own set of mark up for whatever purpose they desire as long as everyone uses it. New elements and attributes can be defined and added to those that already exist enabling the user to create and embed new content for web pages.  A key thing to remember about XHTML is that it is very strict as it must have certain elements added to the code as well as have the DOCTYPE correctly added.
+
+                                            After this we got to the theory behind the Document Object Model, and its relationship to dynamic HTML, as we had previously completed it in a practical session which was used to add functionality to our websites and project.
+                                            The Document Object Model is essentially an interface in which programmers can use their code to create programs and scripts which will access, update the content , structure and the overall style without the need to static do something.
+                                            This allows programmers to create and build documents, navigate their structure as well as make changes to elements and content. this is referred to as dynamic HTML.
+                                            <br><br>
+                                            After this we discussed the importance of sticking to standards and in relation to web developing we looked at adhering to the W3C standard. If the page adheres to certain w3 standards then it is more likely whenever the website has been searched for that it will be more desirable in the way it is portrayed. The w3 standard allows developers who are making websites to optimise their page rendering in order to make their pages load a lot quicker and make the website more appealing to users. Finally the w3 standards will cover you for more than 1 browser so that the user is not tied down to just one browser which increases flexibility.
+                                            <br><br>
+                                            After this we learnt of how you can utilise a web browser into being an application delivery platform effectively. A web browser is able to render all the necessary components of a normal application therefore a browser can be used as a more wide scale form of delivery. Since web browsers were originally designed to display static , page structured documents therefore it is not surprising that it is an ideal environment for desktop style applications. The utilisation of forms and data submission can be used as input which can be connected to a database.
+                                            <br><br>
+                                            In order to check if you are compliant with all government and industry standards you may place all of your code or your site into an accessibility checker using a validator. However if you are complying to standards which are adhered by your employer you must keep consistent throughout in order to maintain high standards. A employer may adapt a certain type of bootstrap framework and the way that they design their pages  may be completely different from others.
+
+                                            XML is extensible markup language which was design to store and transport data so it could be read and interpreted by humans and computerised systems. XML store data in plain text format therefore the storage can be independent to the system and platform that you are on so your data can be dealt with easier by terms of exportation, importation and simple movements.
+                                        </p><br>
+                                    </div>
+                                </div>
+
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12"><h2>Log 15 (Web Design and Development Jobs)</h2></div>
+                                    <div class="col-md-12">
+                                        <p>The next section of our logs we looked at web design and development careers that are available to people who are interested in the IT sector. The IT sector is constantly changing so it is imperative that you stay up to date with all the latest technologies as technology moves so fast and new things are being discovered everyday. If you plan to be a ahead of the game in IT you must be constantly researching and keeping your employees up to date through constant training. There are many different roles that can be undertaken by IT employees and we talked through several of them.
+
+                                            The first job we looked at was a web analyst. A web analyst will essentially trouble shoot the website they are working on as well as the business and look at ways they could possibly improve the overall performance.  They look at the company themselves as well as the competition in order to make adjustments to be on top. They will use calculations and percentages in order to give a better view of how much traffic or problems the website faces over a time period and after this they will present it to management to show them where they are going right or wrong.
+                                            <br><br>
+                                            The next job we looked at was a website manager who is the person responsible for deciding what information is placed on the company website. Usually the website managers will have experience in writing content as well as have knowledge of website design so that they can better decide exactly what to do with the content they have. Obviously being the manager you will take the lead role in deciding what happens with the site and you will be in charge of interacting with potential clients and partners and present exactly what has been created.
+                                            <br><br>
+                                            The next job we looked at was a Database Administrator who is responsible for the performance, integrity and security of a database. Also they will be involved in the planning and development of the database as well as troubleshoot and report any issues they may have. They will be responsible for monitoring user access and security to the database. Everything to do with the database from how it runs all the way down to who enters the system will be dealt with by them as this is very important to the integrity and security of the system.
+                                            <br><br>
+                                            After this we looked at a server administrator who has the responsibility of managing and monitoring the performance of the computer servers in a company’s data centre. On a daily basis it will be their job to ensure that the system and network runs smoothly and efficiently without any downtime or performance degradation. Maintaining software and security updates, monitoring server activity and ensuring availability or client server applications and overall general security will be several of their daily tasks. A lot of these are performed throughout the day but a lot of them are performed at the weekend and evenings to prevent downtime at peak times.
+                                            <br><br>
+
+                                            The next job was a Help Desk technician who are there to diagnose and solve software and hardware problems for computer users in an office type environment or any computer based environment. A decent knowledge of computer systems and good customer service skills will secure you a job in this field which will allow you to build on your skills and progress along the career ladder. You will be doing general fixing and service of computers and the software behind them as they is considered quite a low level job in comparison to others however it can allow you to get your foot through the door.
+                                            <br><br>
+                                            After this we looked at a web marketing manager who is someone who deals with creating and implementing inline marketing strategies to increase sales and revenue for a company. They will design and create a campaign which will aim to make the business more successful by drawing in more users. It is important to have good knowledge in IT but also have more knowledge of marketing and communications which have been joined in with a business style field.
+                                            <br><br>
+                                            The next job we looked at is a mobile web application developer who is a developer that specialises in developing applications for mobile devices such as Apple, Android and Windows Phone. Most mobile application developers will have roots in web application but be able to integrate their coding into utilising the unique features that mobile devices offer such as touch screen, force touch or gaming apps may integrate the accelerometer. They will have to be very proficient in their code writing skills as each application for each devices may be written in different languages and styles so reusability will be extremely hard.
+                                            <br><br>
+                                            The final job we looked at was a PC and mobile repair technician which are people who will diagnose problems with PCs and mobiles and repair them for a fee. A lot of the time it will be screens for phones and for computers it could be anything from infected hard drives to broken internal components that may need replaced. This is quite a low level job which requires little experience to enter and is commonly a very low paid job however it can be a start for some people to enter the it industry as it will give them valuable experience about computer systems or mobiles.
+                                            <br><br>
+                                            There is a difference between a web architect and a web application developer as they make work in the same company they may perform different roles. The web architect has the job of designing and making out plans for what the web site will look like and work out how each part of the website and system will work together. Although they will have some skill they will not be as intelligent about programming when it comes to a web application developer. A web developer will take all the plans from the web architect and then implement it into an actual system to make it fully functional.
+                                            <br><br>
+                                            Finally at the top of the hierarchical structure is the Chief Executive Officer (CEO) and the Chief Operations Officer (COO) who both have names sounding similar but are in charge of different bits of the business. They are responsible for the overall company and they must work out how to steer the busy in the direction decided by the board of directors. This is a very high level job deciding everything to do with the business. The COO however specifies his jobs to individual departments and how they are run on a daily basis.
+
+                                        </p><br>
+                                    </div>
+                                </div>
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12"><h2>Log 16 (Web Diagram and Design 2)</h2></div>
+                                    <div class="col-md-12">
+                                        <p>There are several different types graphic file formats that can be used when designing a web page each of which have different uses and benefits. There are several main formats used for graphics and images and they are PNG, JPEG, GIF, SVG. The graphics can have lossy compression or lossless compression. Lossy compression is reduces a file by permanently eliminating certain information especially redundant information. In lossless compression every bit of data remain after the file has been uncompressed. PNG-24 is a lossless format with large colour palette that supports transparency while PNG-8 is also lossless with a limited colour palette which was designed to replace GIFs. However JPEG is a lossy format with a large colour palette of up to 16.7 million colours. GIF is lossless format with a limited colour palette that also supports transparency and animation. SVG is a vector based format which means the images are made up of shapes and lines that use mathematical formulas to create them. However Raster based graphics create the image using pixels.
+                                            <br><br>
+                                            After this we looked at how we would create images using a graphics creation package such as CorelDraw or Serif. After you have selected a graphics package and decided whether you are going to use a graphics drawing package or whether you are going to just edit a photograph normally. Once you have selected which way you are going to do it then you will create layers, add styles or choose any way you would like to edit the photos. Once you have created the image fully you can then save it to be either used on your web page or wherever else that you decided to use it.
+                                            Stock photographs are photographs of certain situations, places and tasks that have been photographed for others to use at a fee. This are a lot cheaper than getting the photos taken professional when they will be fit for purpose most of the time however not all these photos are relevant are some can be never used. Stock photos will only save you money if you do not have photography equipment at your disposable because amateur photographs may suit your site just fine. in my opinion a lot of stock photos are irrelevant and will not suit majority of businesses that need photographs for their websites therefore a more professional approach would be better.
+                                            <br><br>
+                                            Most websites have photo management strategies in place on their websites meaning that whenever they go to use photos for certain web pages they will search the files for each separate categories. For example all different formats like jpegs, gifs etc would be placed into their separate folders so they are very easily accessible and it makes the file management system a lot more cleaner.
+                                            <br><br>
+                                            On the next section of our NVQ we looked at what exactly the colour safe pallet can be defined as. These are 216 colours that set the standard across mac and pc that are used by the majority of browsers. There are then 40 reserved colours that makes exactly 256 web colours that can be used. Colours can be used in several different ways on web pages which can greatly effect the appeal to a website. The colours can be used to make someone have a different feel on their mood, make the website more readable, make certain text stand out more than others or even have colours which fall into the browser safe pallet. It is very important when designing your website that you consider all these aspects so that your website will be more appealing to users and people will actually want to use your site. In different cultures colours have different significance therefore when designing your website you should look at your target audience and what country they may be from and choose the colours all around that.
+                                            <br><br>
+                                            After this we learnt about the ways elements in your html can be styled by CSS. This can be done several ways throughout your elements such as inline, embedded and linked using a stylesheet. The inline way to apply style is when you apply your styling tags to your html element which can be useless in the short term but for many style applications it can be quite messy. There is also the way of using is embedded styling which is when all the style tags are added separately at the top of the html page and they are then reference by their name or their id. The finally way to apply style of CSS is by linking it through an external stylesheet file which is then linked to the main html file by a link tag. This is widely used by most developers as it is the easiest and most professional way to clean up your code.
+                                            <br><br>
+                                            Finally to finish off this section on web diagram and design we looked at the challenges that designers and developers will face when designing web sites for mobile devices. There a tools on which you can use in order to try and make the designing of mobile device software a lot easier however it can be quite difficult to do majority of the work. You will have to focus on working in your code to work with certain items such as touch screen or other items such as the accelerometer for the iPhone. Finally you will have to look at optimising the content on your page so it can load faster over mobile network if the user is currently not connected to the main network.
+                                            <br><br>
+                                            The security manger of a business will oversee all of the operations of all the security solutions through taking charge of all the organisations security analysts. They will also deal with all the policies regarding security within the business as well as the training that needs to be handed out to put everyone on the same page. The security manager is also expected to report back to the higher levels of authority within the business.
+                                            However this job differs to the job of being a security analyst or a consultant. The security analyst has the responsibility of maintaining the whole security and integrity of the data flowing in and out of the business. Data integrity can be defined as the accuracy and consistency of the data stored within a businesses data stores. The analyst must train others on the steps they must be to stay safe online and within the business and they must also work along side higher authority to achieve the highest levels of security.
+                                            After all this has been completed they have to keep all records of the security information which will detail how their hardware and software systems are kept secure.
+
+                                        </p><br>
+                                    </div>
+                                </div>
+
                 </div>
-            </div>
-            <div class="comments-list">
-                <div id ="div1" class="row">
-                    <div class="col-sm-12 col-xs-12">
-                        <a><h3 class="user-name">Html/GUIs</h3></a>
-                        <div class="card-data">
-                            <ul>
-                                <li class="comment-date"><i class="fa fa-clock-o"></i> 15/09/2016</li>
-                            </ul>
-                        </div>
-                        <p class="comment-text">For the third lesson we used BlueGriffin which is a GUI editor in order to change the layout and some styles of your site very easily without the use for actual code. The website is opened in the editor and then using the features on the editor you can work from there. The editor can also be used to design and edit tables easily. Using this editor i changed the header text, the font, added a new table and then saved the file.
-                            Once we were finished with the GUI editor we then took our html page and placed it into the w3 validator which checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc. This is very handy to make sure it conforms to the necessary standards in computing. Finally we used terminal and a site called github from which we would host our webpage. This would involve locating and initialising the files for github and the webpage using terminal.
-                            After this we could add new files, commit changes or push these changes to the repository.</p>
-                    </div>
-                </div>
-            </div>
+        </header>
 
 
 
-            <footer class="page-footer  center-on-small-only">
+
+
+
+
+                            <div class="clearfix"><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+
+
+
+
+  <footer class="page-footer  center-on-small-only">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">

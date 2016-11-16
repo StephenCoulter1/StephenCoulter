@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+
+
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
+
+        <div class="container">
+
+
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logs.html">Logs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entry.html">Entry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="demonstration.html">Demo</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/ISArcLimited/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="https://twitter.com/isarclimited"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-instagram"></i></a>
+
+                    </li>
+                    <li class="nav-item" id="isarcLogo">
+                        <a class="nav-link" href="http://www.isarc.co.uk"> <img src="isarcwhite.png" width="30" height="29" ></a>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <h1 id="mainHeader" class="h1-responsive wow fadeInUp">Welcome to the Java Script Page</h1></li>
+                <li>
+                    <p id ="underTitle" class="wow fadeInUp" data-wow-delay="0.2s">Now on the javascript page</p>
+                </li>
+                <!--<li class="wow fadeInUp" data-wow-delay="0.4s">
+                    <a class="btn btn-white-outline btn-lg" href ="entry.html#entry1"><i class="fa fa-edit left"></i>Create Log</a>
+                    <a class="btn btn-white-outline btn-lg" href="logs.html#log1" alt="view log"><i class="fa fa-book left"></i>View Logs</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+
+
+<textarea id="areaText"></textarea>
+<button type="submit" value="submit"  onclick="createLog()">Submit</button>
+
+    <script type="text/javascript" src="demo.js"></script>
+
+<div id="output1"></div>
+<div id="output2"></div>
+<div id="output3"></div>
+
+<img onmouseover="setImage(this)" onmouseout="resetImage(this)" src="img/photos/dog1.jpg" height="257" width="236"/>
+
+<button type="submit" value="submit"  onclick="getLogs(this)">Submit</button>
+
+<button type="submit" value="submit" id="button1" onclick="getURL(this)">Button 1</button>
+
+<button type="submit" value="submit" id="button2" onclick="getURL(this)">Button 2</button>
+
+<button type="submit" value="submit" onclick="getBrowser(this)">Browser</button>
+
+<form id="inputForm"  onsubmit="checkUser()">
+    Input:<input type="text" name="input" ><br>
+    <input type="password" name="passCode"><br>
+    <input type="submit" value="Submit">
+
+
+</form>
+
+
+
+
+
+</body>
+
+</html>
